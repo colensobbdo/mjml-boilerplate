@@ -1,0 +1,31 @@
+{% import "image.mjml" as image %}
+
+<mjml>
+  <mj-head>
+    <mj-title>{% block title %}{% endblock %}</mj-title>
+    <mj-attributes>
+      <mj-button
+        padding="0"
+        background-color="#000"
+        color="#fff"
+        border-radius="0"
+        text-transform="uppercase"
+        letter-spacing="1px"
+        font-size="13px"
+        line-height="1.5"></mj-button>
+      <mj-section padding="0"/>
+      <mj-text padding="0" line-height="1.5"/>
+      <mj-image padding="0" border="0"/>
+      <mj-all
+        font-size="14px"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+      />
+    </mj-attributes>
+    <mj-style>
+      a { color: inherit; text-decoration: none; }
+    </mj-style>
+  </mj-head>
+  <mj-body>
+    {% block content %}{% endblock %}
+  </mj-body>
+</mjml>
