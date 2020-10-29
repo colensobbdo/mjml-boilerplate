@@ -1,0 +1,13 @@
+{% macro spacer(size=3) %}
+  {% if size === 1 %}
+    <mj-spacer height="4px" />
+  {% elseif size === 2 %}
+    <mj-spacer height="8px" />
+  {% elseif size === 4 %}
+    <mj-spacer height="24px" />
+  {% elseif size === 5 %}
+    <mj-spacer height="32px" />
+  {% else %}
+    <mj-spacer height="16px" />
+  {% endif %}
+{% endmacro %}

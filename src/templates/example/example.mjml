@@ -1,13 +1,22 @@
 {% extends "default.mjml" %}
+{% import "spacer.mjml" as spacer %}
 {% block title %}{{ title }}{% endblock %}
 
 {% block content %}
-  <mj-section background-color="#f0f0f0">
-    <mj-column>
+  <mj-section mj-class="c-section c-section--base" css-class="c-section">
+    <mj-column mj-class="c-container" css-class="c-container">
       <mj-text align="center" font-size="30px" font-weight="bold">
         {{ title }}
       </mj-text>
+      {{ spacer.spacer() }}
       {{ image.image(src='assets/example-image.png') }}
+      {{ spacer.spacer(5) }}
+      <mj-text mj-class="c-heading--h1">Heading 1</mj-text>
+      <mj-text mj-class="c-heading--h2">Heading 2</mj-text>
+      <mj-text mj-class="c-heading--h3">Heading 3</mj-text>
+      <mj-text mj-class="c-heading--h4">Heading 4</mj-text>
+      <mj-text mj-class="c-heading--h5">Heading 5</mj-text>
+      <mj-text>Text</mj-text>
     </mj-column>
   </mj-section>
 {% endblock %}

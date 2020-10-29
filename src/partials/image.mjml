@@ -1,3 +1,7 @@
 {% macro image(src, alt='', width='600px') %}
   <mj-image width="{{ width }}" src="{{ src }}" alt="{{ alt }}" />
 {% endmacro %}
+
+{% macro test(text='nothing') %}
+  <mj-text>{{ text }}</mj-text>
+{% endmacro %}

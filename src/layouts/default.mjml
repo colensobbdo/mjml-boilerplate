@@ -1,4 +1,5 @@
 {% import "image.mjml" as image %}
+{% import "spacer.mjml" as spacer %}
 
 <mjml>
   <mj-head>
@@ -20,9 +21,35 @@
         font-size="14px"
         font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
       />
+
+      {# Typography #}
+      <mj-class name="c-heading--h1" font-size="38px" font-weight="600" line-height="1.23"/>
+      <mj-class name="c-heading--h2" font-size="30px" font-weight="600" line-height="1.35"/>
+      <mj-class name="c-heading--h3" font-size="24px" font-weight="600" line-height="1.35"/>
+      <mj-class name="c-heading--h4" font-size="20px" font-weight="600" line-height="1.4"/>
+      <mj-class name="c-heading--h5" font-size="16px" font-weight="600" line-height="1.5"/>
+
+      {# Section #}
+      <mj-class name="c-section" padding="52px 0 52px 0"/>
+      <mj-class name="c-section--base" background-color="#f5f5f5"/>
+
+      {# Container #}
+      <mj-class name="c-container" padding="0 44px 0 44px"/>
     </mj-attributes>
     <mj-style>
       a { color: inherit; text-decoration: none; }
+    </mj-style>
+
+    <mj-style>
+      @media only screen and (max-width:480px) {
+        .c-section > table > tbody > tr > td {
+          padding: 44px 0 44px 0 !important;
+        }
+
+        .c-container > table > tbody > tr > td {
+          padding: 0 24px 0 24px !important;
+        }
+      }
     </mj-style>
   </mj-head>
   <mj-body>
