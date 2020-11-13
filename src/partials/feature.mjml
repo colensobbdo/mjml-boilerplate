@@ -1,0 +1,19 @@
+{% macro image(src='https://placehold.it/510x268') %}
+  <mj-section mj-class="c-featured-image c-featured-content--bordered">
+    <mj-column>
+      <mj-image src="{{ src }}" />
+    </mj-column>
+  </mj-section>
+{% endmacro %}
+{% macro title(content) %}
+  <mj-spacer height="44px"/>
+  <mj-text mj-class="u-text-large">
+    {{ content }}
+  </mj-text>
+{% endmacro %}
+{% macro paragraph(content) %}
+  <mj-spacer height="18px"/>
+  <mj-text mj-class="u-text-small">
+    {{ content }}
+  </mj-text>
+{% endmacro %}

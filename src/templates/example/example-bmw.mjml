@@ -1,0 +1,37 @@
+{% extends "default.mjml" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+  {{ header.header(href='http://www.example.com') }}
+  <mj-section background-color="#ffffff">
+    <mj-column mj-class="tiles-cell">
+      <mj-text align="center" font-size="30px" font-weight="bold">
+        {{ title }}
+      </mj-text>
+      {{ image.image(src='assets/example-image.png') }}
+    </mj-column>
+  </mj-section>
+  <mj-wrapper>
+  <mj-section>
+    <mj-column>
+      {{ feature.title(content='Non id ex cupidatat in esse sint.') }}
+      {{ feature.paragraph(content='
+        Et commodo enim sit aliquip ullamco. Enim officia aliquip ullamco ut dolor ut ea elit incididunt aute ut qui consequat. Excepteur proident magna eiusmod cupidatat irure cillum do culpa occaecat aute occaecat. Aliquip amet deserunt labore et voluptate reprehenderit ipsum excepteur velit culpa cillum nisi consequat.
+      ') }}
+      {{ cta.link(href='http://www.example.com', label='Learn more') }}
+    </mj-column>
+  </mj-section>
+  </mj-wrapper>
+  <mj-wrapper>
+    {{ feature.image() }}
+    <mj-section>
+      <mj-column>
+        {{ feature.title(content='Non id ex cupidatat in esse sint.') }}
+        {{ feature.paragraph(content='
+          Et commodo enim sit aliquip ullamco. Enim officia aliquip ullamco ut dolor ut ea elit incididunt aute ut qui consequat. Excepteur proident magna eiusmod cupidatat irure cillum do culpa occaecat aute occaecat. Aliquip amet deserunt labore et voluptate reprehenderit ipsum excepteur velit culpa cillum nisi consequat.
+        ') }}
+        {{ cta.link(href='http://www.example.com', label='Learn more') }}
+      </mj-column>
+    </mj-section>
+  </mj-wrapper>
+{% endblock %}

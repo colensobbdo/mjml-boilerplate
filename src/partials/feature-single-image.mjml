@@ -1,0 +1,32 @@
+{% macro block(src='https://placehold.it/510x268', alt='', fullWidth, title, paragraph, cta) %}
+<mj-wrapper>
+{% if fullWidth %}
+  <mj-section>
+{% else %}
+  <mj-section mj-class="c-feature-image-padded">
+{% endif %}
+    <mj-column>
+      <mj-image src="{{ src }}" alt="{{ alt }}" />
+    </mj-column>
+  </mj-section>
+  <mj-section mj-class="c-feature-body">
+    <mj-column>
+      <mj-spacer height="44px" />
+      <mj-text mj-class="u-text-large">
+        {{ title }}
+      </mj-text>
+      <mj-spacer height="18px" />
+      <mj-text mj-class="u-text-small">
+        {{ paragraph }}
+      </mj-text>
+      {% if cta %}
+      <mj-spacer height="7px" />
+      <mj-button mj-class="c-cta-link " align="left" href="{{ cta.href }}" target="_blank" css-class="c-cta-small">
+        {{ cta.label }}
+      </mj-button>
+      {% endif %}
+      <mj-spacer height="44px" />
+    </mj-column>
+  </mj-section>
+</mj-wrapper>
+{% endmacro %}

@@ -3,8 +3,9 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block content %}
-  <mj-section mj-class="c-section c-section--base" css-class="c-section">
-    <mj-column mj-class="c-container" css-class="c-container">
+  {{ header.header(href='') }}
+  <mj-section background-color="#ffffff">
+    <mj-column mj-class="tiles-cell">
       <mj-text align="center" font-size="30px" font-weight="bold">
         {{ title }}
       </mj-text>
@@ -19,4 +20,38 @@
       <mj-text>Text</mj-text>
     </mj-column>
   </mj-section>
+  {{ featureSingle.block(
+    src='https://placehold.it/600x400',
+    fullWidth=true,
+    title='Non id ex cupidatat in esse sint.',
+    paragraph='Et commodo enim sit aliquip ullamco. Enim officia aliquip ullamco ut dolor ut ea elit incididunt aute ut qui consequat. Excepteur proident magna eiusmod cupidatat irure cillum do culpa occaecat aute occaecat. Aliquip amet deserunt labore et voluptate reprehenderit ipsum excepteur velit culpa cillum nisi consequat.',
+    cta={ href: 'http://www.example.com', label: 'Find out more'}
+  ) }}
+  {{ featureSingle.block(
+    src='https://placehold.it/510x268',
+    title='Non id ex cupidatat in esse sint.',
+    paragraph='Et commodo enim sit aliquip ullamco. Enim officia aliquip ullamco ut dolor ut ea elit incididunt aute ut qui consequat. Excepteur proident magna eiusmod cupidatat irure cillum do culpa occaecat aute occaecat. Aliquip amet deserunt labore et voluptate reprehenderit ipsum excepteur velit culpa cillum nisi consequat.',
+    cta={ href: 'http://www.example.com', label: 'Find out more'}
+  ) }}
+  {{ featureDouble.block(
+    leftImage={ src: 'https://placehold.it/300x316', alt:'Left image' },
+    rightImage={ src: 'https://placehold.it/261x237', alt:'Right image' },
+    leftLarge=true,
+    title='Non id ex cupidatat in esse sint.',
+    paragraph='Et commodo enim sit aliquip ullamco. Enim officia aliquip ullamco ut dolor ut ea elit incididunt aute ut qui consequat. Excepteur proident magna eiusmod cupidatat irure cillum do culpa occaecat aute occaecat. Aliquip amet deserunt labore et voluptate reprehenderit ipsum excepteur velit culpa cillum nisi consequat.',
+    cta={ href: 'http://www.example.com', label: 'Find out more'}
+  ) }}
+  {{ featureDouble.block(
+    leftImage={ src: 'https://placehold.it/261x237', alt:'Left image' },
+    rightImage={ src: 'https://placehold.it/300x316', alt:'Right image' },
+    title='Non id ex cupidatat in esse sint.',
+    paragraph='Et commodo enim sit aliquip ullamco. Enim officia aliquip ullamco ut dolor ut ea elit incididunt aute ut qui consequat. Excepteur proident magna eiusmod cupidatat irure cillum do culpa occaecat aute occaecat. Aliquip amet deserunt labore et voluptate reprehenderit ipsum excepteur velit culpa cillum nisi consequat.',
+    cta={ href: 'http://www.example.com', label: 'Find out more'}
+  ) }}
+  {{ image.grid(
+    tL={ src: 'https://placehold.it/280?text=Top%20left', alt:'Top-left' },
+    tR={ src: 'https://placehold.it/280?text=Top%20right', alt:'Top-right' },
+    bL={ src: 'https://placehold.it/280?text=Bottom%20left', alt:'Bottom-left' },
+    bR={ src: 'https://placehold.it/280?text=Botton%20right', alt:'Bottom-right' }
+  )}}
 {% endblock %}

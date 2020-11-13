@@ -1,0 +1,11 @@
+
+{% macro header(href) %}
+  <mj-section mj-class="c-content" css-class="c-content" padding="5px">
+    <mj-column>
+        <mj-text align="center" font-size="12px">
+            Can’t see this email?
+            <a href="{{ href }}" target="_blank" style="color: #1C60D4; font-weight: bold; font-size: 12px">View in browser</a>
+        </mj-text>
+    </mj-column>
+  </mj-section>
+{% endmacro %}

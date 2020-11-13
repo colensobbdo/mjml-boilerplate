@@ -1,0 +1,7 @@
+{% macro link(href, label) %}
+<mj-spacer height="7px" />
+<mj-button mj-class="tile-cta-link " align="left" href="{{ href }}" target="_blank" css-class="c-cta-small">
+  <img src="./assets/right-chevron.png" width="7" height="12" fluid-on-mobile="true"/>&nbsp;{{ label }}
+</mj-button>
+<mj-spacer height="44px"/>
+{% endmacro %}
