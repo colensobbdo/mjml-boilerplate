@@ -5,3 +5,25 @@
 {% macro test(text='nothing') %}
   <mj-text>{{ text }}</mj-text>
 {% endmacro %}
+
+{% macro grid(
+    tL={ src: 'https://placehold.it/280?text=Top%20left', alt:'Top-left' },
+    tR={ src: 'https://placehold.it/280?text=Top%20right', alt:'Top-right' },
+    bL={ src: 'https://placehold.it/280?text=Bottom%20left', alt:'Bottom-left' },
+    bR={ src: 'https://placehold.it/280?text=Botton%20right', alt:'Bottom-right' }
+) %}
+  <mj-wrapper>
+    <mj-section>
+      <mj-group>
+        <mj-column>
+          <mj-image src="{{ tL.src }}" alt="{{ tL.alt }}" mj-class="u-pr-15 u-pb-15" />
+          <mj-image src="{{ bL.src }}" alt="{{ bL.alt }}" mj-class="u-pt-15 u-pr-15" />
+        </mj-column>
+        <mj-column>
+          <mj-image src="{{ tR.src }}" alt="{{ tR.alt }}" mj-class="u-pb-15 u-pl-15" />
+          <mj-image src="{{ bR.src }}" alt="{{ bR.alt }}" mj-class="u-pt-15 u-pl-15" />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+  </mj-wrapper>
+{% endmacro %}

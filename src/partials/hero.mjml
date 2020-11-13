@@ -1,0 +1,7 @@
+{% macro image(src, alt='', width='600px') %}
+<mj-wrapper>
+  <mj-section background-url='{{ src }}'>
+    
+  </mj-section>
+</mj-wrapper>
+{% endmacro %}

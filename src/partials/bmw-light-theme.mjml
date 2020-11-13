@@ -1,0 +1,208 @@
+<mj-attributes>
+  <!-- Global -->
+  <mj-body background-color="#f4f4f4" />
+  <mj-wrapper background-color="#ffffff" padding="0 50px" />
+  <mj-button padding="0" background-color="#1C60D4" color="#fff" border-radius="0" font-weight="bold" font-size="16px" line-height="25px" inner-padding="14px 90px"/>
+  <mj-section padding="0"/>
+  <mj-text padding="0" line-height="1.5" color="#404245"/>
+  <mj-image padding="0" border="0"/>
+  <mj-all font-size="16px" font-weight="100" font-family="Arial, Helvetica, sans-serif"/>
+  <mj-divider border-width="1px" border-color="#C4C4C4" padding-top="40px" padding-bottom="40px" />
+
+  <!-- Components -->
+  <mj-class name="c-button-bordered" color="#1C60D4" background-color="transparent" border="2px solid #1C60D4" inner-padding="14px 90px"/>
+
+  <mj-class name="c-content" background-color="#ffffff" padding="30px 50px 50px"/>
+  <mj-class name="c-app-store-content" background-color="#ffffff" padding="20px 50px 20px"/>
+  <mj-class name="c-app-store" background-color="#ffffff" padding="0 40px"/>
+  <mj-class name="c-footer-social" background-color="#ffffff" padding="60px 50px 0"/>
+  <mj-class name="c-footer-copy" background-color="#ffffff" padding="60px 50px 50px"/>
+  <mj-class name="c-footer-copy-above-unsubscribe" background-color="#ffffff" padding="60px 50px 10px" align="center"/>
+  <mj-class name="c-footer-unsubscribe" background-color="#ffffff" padding="10px 50px 50px"/>
+
+  <mj-class name="c-media" border="0" background-color="#E5E5E5"/>
+  <mj-class name="c-media-alt" border="0" background-color="#F7F7F7"/>
+  <mj-class name="c-media__media" vertical-align="middle" border="0" padding="0"/>
+  <mj-class name="c-media__content" vertical-align="middle" border="0" padding="20px 50px"/>
+
+  <mj-class name="c-cta-media" border="0" background-color="#E5E5E5" padding="50px"/>
+  <mj-class name="c-cta-small" border="0" background-color="#E5E5E5" padding-top="14px"/>
+
+  <mj-class name="c-gallery" border="0" background-color="#ffffff" padding="35px"/>
+
+  <mj-class name="c-list" background-color="#ffffff" padding="0 50px" />
+
+  <mj-class name="c-featured-image" padding-top="31px"/>
+  <mj-class name="c-featured-title" padding-top="35px"/>
+  <mj-class name="c-featured-description" padding-top="20px" padding-bottom="70px" />
+  <mj-class name="c-featured-title--first" padding-top="0"/>
+  <mj-class name="c-featured-title__title" min-width="50px" width="50px" height="18px" align="left" vertical-align="middle"/>
+  <mj-class name="c-featured-title__title-text" font-size="68px" line-height="1.1"/>
+  <mj-class name="c-featured-title__sub-title" align="left" vertical-align="middle"/>
+  <mj-class name="c-featured-title__sub-title-text" font-size="25px" line-height="30px"/>
+
+  <mj-class name="c-featured-content" padding-top="20px" padding-bottom="40px"/>
+  <mj-class name="c-featured-content--bordered" border-top="1px solid #C4C4C4"/>
+
+  <!-- Utilities -->
+  <mj-class name="u-text-large" font-size="25px" line-height="1.3" />
+  <mj-class name="u-text-hi-header" font-size="16px" line-height="1.3" />
+  <mj-class name="u-text-small" font-size="16px"/>
+
+  <!-- Tiles area with blocks -->
+  <mj-class name="tiles-section" padding-left="0px" padding-top="0px" padding-bottom="5px" background-color="#FFFFFF"/>
+  <mj-class name="tiles-cell" />
+  <mj-class name="title-cell-copy-block" padding-left="36px" padding-right="36px" />
+  <mj-class name="tile-cta-link" border="0" color="#1C60D4" font-weight="bold" font-size="16px" text-decoration="none" line-height="25px" inner-padding="0" padding-top="14px" background-color="#FFFFFF" text-align="left"/>
+  <mj-class name="c-unsubscribe-button" padding-left="25px" padding-right="25px"/>
+  <mj-class name="c-footer-cell" width="50%" />
+  <mj-table padding="0" line-height="1.3" color="#404245"/>
+</mj-attributes>
+
+<!-- Styles -->
+<mj-style inline="inline">
+  .u-show-mobile,
+  .u-show-mobile-outlook {
+    display: none;
+  }
+
+  .u-show-mobile table,
+  .u-show-mobile-outlook table {
+    mso-hide: all;
+  }
+
+  .c-anchor {
+    color: #1C60D4;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 25px;"
+  }
+</mj-style>
+
+<mj-style>
+  @font-face {
+    font-family: "BMWTypeNext";
+    src: url("https://forms.bmw.co.za/BMWFonts/BMWTypeNextLatinTT-Light.eot");
+    src: url("https://forms.bmw.co.za/BMWFonts/BMWTypeNextLatinTT-Light.eot?#iefix") format("embedded-opentype"), url("https://forms.bmw.co.za/BMWFonts/BMWTypeNextLatinTT-Light.woff") format("woff"), url("https://forms.bmw.co.za/BMWFonts/BMWTypeNextLatinTT-Light.ttf") format("truetype");
+  }
+
+  .u-font-family-brand > div {
+    font-family: BMWTypeNext, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !important;
+    font-display: swap;
+  }
+
+  @media only screen and (max-width:480px) {
+    .no-padding-mobile > table > tbody > tr > td {
+      padding: 0px !important;
+    }
+
+    .max-width-mobile {
+      width: 100% !important;
+    }
+
+    .max-width-mobile2 {
+      width: calc(100% - 50px) !important;
+    }
+
+    .fixed-width-mobile {
+      min-width: 50px !important;
+    }
+
+    .u-show-desktop {
+      display: none !important;
+    }
+
+    .u-show-mobile,
+    .u-show-mobile-outlook {
+      display: block!important;
+    }
+
+    .c-button-bordered > table > tbody > tr > td > a,
+    .c-button > table > tbody > tr > td > a {
+      padding-right: 30px !important;
+      padding-left: 30px !important;
+    }
+
+    .c-content > table > tbody > tr > td {
+      padding: 30px 30px 40px !important;
+    }
+
+    .c-app-store-content > table > tbody > tr > td {
+      padding: 30px 30px 20px !important;
+    }
+
+    .c-media__content > table > tbody > tr > td {
+      padding: 30px 30px !important;
+    }
+
+    .c-cta-media > table > tbody > tr > td {
+      padding: 30px !important;
+    }
+
+    .c-cta-small {
+      padding-top: 14px !important;
+    }
+
+    .c-gallery > table > tbody > tr > td {
+      padding: 15px !important;
+    }
+
+    .c-app-store > table > tbody > tr > td {
+      padding: 0 20px 0 !important;
+    }
+    .c-unsubscribe-button {
+      padding-left: 5px !important;
+      padding-right: 5px !important;
+    }
+    .c-unsubscribe-button > div {
+      padding-top: 10px;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      text-align: center !important;
+    }
+    .c-footer-social > table > tbody > tr > td {
+      padding: 40px 30px 0 !important;
+    }
+
+    .c-footer-copy > table > tbody > tr > td {
+      padding: 90px 30px 40px !important;
+    }
+    
+    .c-footer-copy-above-unsubscribe > table > tbody > tr > td {
+      padding: 90px 30px 10px !important;
+    }
+
+    .c-footer-unsubscribe > table > tbody > tr > td {
+      padding: 10px 30px 40px !important;
+    }
+
+    .c-footer-text > table > tbody > tr > td {
+      padding: 50px 30px 40px !important;
+    }
+
+    .c-list > table > tbody > tr > td {
+      padding: 0 30px !important;
+    }
+
+    .u-text-small > div {
+      font-size: 12px !important;
+    }
+
+    .u-mobile-text-align-center > div {
+      text-align: center !important;
+    }
+
+    .u-mobile-text-align-left > div {
+      text-align: left !important;
+    }
+    
+    .tile-cell-copy-block{
+      padding-left: 30px !important;
+      padding-right: 30px !important;
+    }
+    .c-featured-copy{
+      padding-left: 6px !important;
+    }
+  }
+</mj-style>
